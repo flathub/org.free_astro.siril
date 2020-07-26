@@ -94,7 +94,7 @@
             ],
             "config-opts": [
                 "-D CMAKE_BUILD_TYPE=RELEASE",
-                "-D BUILD_EXAMPLES=OFF"
+                "-D BUILD_EXAMPLES=OFF",
                 "-D OPENCV_GENERATE_PKGCONFIG=ON"
             ],
             "sources": [
