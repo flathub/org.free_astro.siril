@@ -193,10 +193,6 @@
                     "tag": "0.99.4",
                     "commit": "19fa98070546d0f331264226d9794940f4a7c51b"
                 },
-                {
-                    "type": "patch",
-                    "path": "siril-appdata.patch"
-                }
             ]
         }
     ]
