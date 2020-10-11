@@ -185,6 +185,32 @@
                 }
             ]
         },
+        {
+            "name" : "libheif",
+            "config-opts": [ "--disable-gdk-pixbuf" ],
+            "cleanup": [ "/bin" ],
+            "modules": [
+                {
+                    "name": "libde265",
+                    "config-opts": [ "--disable-sherlock265" ],
+                    "cleanup": [ "/bin" ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/strukturag/libde265/releases/download/v1.0.7/libde265-1.0.7.tar.gz",
+                            "sha256": "eac6b56fcda95b0fe0123849c96c8759d832ec9baded2c9c0a5b5faeffb59005"
+                        }
+                    ]
+                }
+            ],
+            "sources" : [
+                {
+                    "url" : "https://github.com/strukturag/libheif/releases/download/v1.9.1/libheif-1.9.1.tar.gz",
+                    "sha256" : "5f65ca2bd2510eed4e13bdca123131c64067e9dd809213d7aef4dc5e37948bca",
+                    "type" : "archive"
+                }
+            ]
+        },
         "shared-modules/intltool/intltool-0.51.json",
         {
             "name": "siril",
