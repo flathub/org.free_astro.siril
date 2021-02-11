@@ -4,7 +4,7 @@
     "runtime-version": "3.38",
     "sdk": "org.gnome.Sdk",
     "command": "siril",
-    "rename-icon": "siril",
+    "rename-icon": "org.free_astro.siril",
     "finish-args": [
         "--share=ipc",
         "--share=network",
@@ -32,6 +32,28 @@
                     "type": "archive",
                     "url": "http://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-3.49.tar.gz",
                     "sha256": "5b65a20d5c53494ec8f638267fca4a629836b7ac8dd0ef0266834eab270ed4b3"
+                }
+            ]
+        },
+        {
+            "name": "wcslib",
+            "config-opts": [
+                "LIBS=-pthread -lcurl -lm",
+                "--without-pgplot",
+                "--without-cfitsio",  
+                "--disable-fortran"
+            ],
+            "cleanup": [
+                "/include",
+                "/lib/*.a",
+                "/lib/*.la",
+                "/lib/pkgconfig"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "ftp://ftp.atnf.csiro.au/pub/software/wcslib/wcslib.tar.bz2",
+                    "sha256": "a21c964136055ad1d68ca9d3e9714374a9dc3ff2f7072622af08cc4f5a0c511c"
                 }
             ]
         },
@@ -239,8 +261,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/free-astro/siril.git",
-                    "tag": "0.99.6",
-                    "commit": "e8431f59f82f396e7efd0a752d42ed2d29d53f98"
+                    "tag": "0.99.8",
+                    "commit": "a469ab3559166fb4073d20a61168e65ef6b5160c"
                 }
             ]
         }
