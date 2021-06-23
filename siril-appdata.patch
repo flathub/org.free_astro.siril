@@ -1,5 +1,5 @@
 diff --git a/platform-specific/linux/org.free_astro.siril.appdata.xml b/platform-specific/linux/org.free_astro.siril.appdata.xml
-index 7186858b..dea5468e 100644
+index dea5468e..54d9795b 100644
 --- a/platform-specific/linux/org.free_astro.siril.appdata.xml
 +++ b/platform-specific/linux/org.free_astro.siril.appdata.xml
 @@ -88,6 +88,7 @@
@@ -8,5 +8,5 @@ index 7186858b..dea5468e 100644
    <releases>
 +    <release version="0.99.10.1" date="2021-06-23" />
      <release version="0.99.10" date="2021-06-11" />
-     <release version="0.99.8.1" date="2021-02-13"
-     
+     <release version="0.99.8.1" date="2021-02-13" />
+     <release version="0.99.8" date="2021-02-10" />
