@@ -30,8 +30,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-3.49.tar.gz",
-                    "sha256": "5b65a20d5c53494ec8f638267fca4a629836b7ac8dd0ef0266834eab270ed4b3"
+                    "url": "http://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.0.0.tar.gz",
+                    "sha256": "88735b69bb017ee92823b9e7ee14efeae2e57fb6c00503ed3aa2820e850a7b5e"
                 }
             ]
         },
@@ -66,8 +66,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://mirror.sergal.org/gnu/gsl/gsl-2.6.tar.gz",
-                    "sha256": "b782339fc7a38fe17689cb39966c4d821236c28018b6593ddb6fd59ee40786a8"
+                    "url": "http://mirror.sergal.org/gnu/gsl/gsl-2.7.tar.gz",
+                    "sha256": "efbbf3785da0e53038be7907500628b466152dbc3c173a87de1b5eba2e23602b"
                 }
             ],
             "cleanup": [
@@ -109,8 +109,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://fftw.org/fftw-3.3.8.tar.gz",
-                    "sha256": "6113262f6e92c5bd474f2875fa1b01054c4ad5040f6b0da7c03c98821d9ae303"
+                    "url": "http://fftw.org/fftw-3.3.9.tar.gz",
+                    "sha256": "bf2c7ce40b04ae811af714deb512510cc2c17b9ab9d6ddcf49fe4487eea7af3d"
                 }
             ],
             "cleanup": [
@@ -192,7 +192,8 @@
             ]
         },
         {
-            "name": "libraw",
+            "name": "
+            ",
             "config-opts": [ "--disable-examples", "--disable-static" ],
             "cleanup": [
                 "/include",
@@ -203,8 +204,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url" : "https://www.libraw.org/data/LibRaw-0.20.0.tar.gz",
-                    "sha256" : "1f0a383da2ce9f409087facd28261decbf6be72cc90c78cd003b0766e4d694a3"
+                    "url" : "https://www.libraw.org/data/LibRaw-0.20.2.tar.gz",
+                    "sha256" : "dc1b486c2003435733043e4e05273477326e51c3ea554c6864a4eafaff1004a6"
                 }
             ]
         },
