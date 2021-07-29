@@ -192,8 +192,7 @@
             ]
         },
         {
-            "name": "
-            ",
+            "name": "libraw",
             "config-opts": [ "--disable-examples", "--disable-static" ],
             "cleanup": [
                 "/include",
