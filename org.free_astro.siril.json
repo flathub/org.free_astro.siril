@@ -12,7 +12,9 @@
         "--socket=wayland",
         "--filesystem=home",
         /* Needed for gvfs to work */
-        "--talk-name=org.gtk.vfs", "--talk-name=org.gtk.vfs.*"
+        "--talk-name=org.gtk.vfs.*",
+        "--filesystem=xdg-run/gvfs",
+        "--filesystem=xdg-run/gvfsd"
     ],
     "modules": [
         {
