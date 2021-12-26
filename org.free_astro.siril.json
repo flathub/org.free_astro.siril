@@ -282,6 +282,11 @@
         {
             "name": "siril",
             "buildsystem": "meson",
+            "post-install": [
+                "sed -i s/text-x-seq/${FLATPAK_ID}.text-x-seq/ ${FLATPAK_DEST}/share/mime/packages/siril.xml",
+                "mv ${FLATPAK_DEST}/share/mime/packages/siril.xml ${FLATPAK_DEST}/share/mime/packages/${FLATPAK_ID}.xml",
+                "mv ${FLATPAK_DEST}/share/icons/hicolor/scalable/mimetypes/text-x-seq.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/mimetypes/${FLATPAK_ID}.text-x-seq.svg"
+            ],
             "sources": [
                 {
                     "type": "git",
