@@ -12,7 +12,9 @@
         "--socket=wayland",
         "--filesystem=home",
         /* Needed for gvfs to work */
-        "--talk-name=org.gtk.vfs", "--talk-name=org.gtk.vfs.*"
+        "--talk-name=org.gtk.vfs.*",
+        "--filesystem=xdg-run/gvfs",
+        "--filesystem=xdg-run/gvfsd"
     ],
     "modules": [
         {
@@ -40,7 +42,7 @@
             "config-opts": [
                 "LIBS=-pthread -lcurl -lm",
                 "--without-pgplot",
-                "--without-cfitsio",  
+                "--without-cfitsio",
                 "--disable-fortran"
             ],
             "cleanup": [
@@ -182,12 +184,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.exiv2.org/builds/exiv2-0.27.3-Source.tar.gz",
-                    "sha256": "a79f5613812aa21755d578a297874fb59a85101e793edc64ec2c6bd994e3e778"
-                },
-                {
-                    "type": "patch",
-                    "path": "exiv2-build-arm.patch"
+                    "url": "http://www.exiv2.org/builds/exiv2-0.27.5-Source.tar.gz",
+                    "sha256": "35a58618ab236a901ca4928b0ad8b31007ebdc0386d904409d825024e45ea6e2"
                 }
             ]
         },
@@ -284,17 +282,18 @@
         {
             "name": "siril",
             "buildsystem": "meson",
+            "post-install": [
+                "sed -i s/text-x-seq/${FLATPAK_ID}.text-x-seq/ ${FLATPAK_DEST}/share/mime/packages/siril.xml",
+                "mv ${FLATPAK_DEST}/share/mime/packages/siril.xml ${FLATPAK_DEST}/share/mime/packages/${FLATPAK_ID}.xml",
+                "mv ${FLATPAK_DEST}/share/icons/hicolor/scalable/mimetypes/text-x-seq.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/mimetypes/${FLATPAK_ID}.text-x-seq.svg"
+            ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://gitlab.com/free-astro/siril.git",
-                    "tag": "0.99.10.1",
-                    "commit": "21a2646497a5135f7c679ef159bbf49296237be8"
-                },
-                {
-                    "type": "patch",
-                    "path": "siril-appdata.patch"
-               }
+                    "tag": "1.0.0-rc2",
+                    "commit": "2b1cc2087131bab9b191f7d478153028ab285ea1"
+                }
             ]
         }
     ]
