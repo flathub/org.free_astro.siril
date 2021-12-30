@@ -1,0 +1,25 @@
+From ecff7c2f73d9ba708668631aef93c31e63a1b7d4 Mon Sep 17 00:00:00 2001
+From: Cyril Richard <cyril.richard42@gmail.com>
+Date: Sun, 19 Dec 2021 14:46:00 +0100
+Subject: [PATCH] Update appdata
+
+---
+ platform-specific/linux/org.free_astro.siril.appdata.xml | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/platform-specific/linux/org.free_astro.siril.appdata.xml b/platform-specific/linux/org.free_astro.siril.appdata.xml
+index 54d9795b..3e9ee3be 100644
+--- a/platform-specific/linux/org.free_astro.siril.appdata.xml
++++ b/platform-specific/linux/org.free_astro.siril.appdata.xml
+@@ -88,6 +88,8 @@
+   <update_contact>cyril_at_free-astro.org</update_contact>
+   <content_rating type="oars-1.0"/>
+   <releases>
++    <release version="1.0.0-rc2" date="2021-12-08" />
++    <release version="1.0.0-rc1" date="2021-11-20" />
+     <release version="0.99.10.1" date="2021-06-23" />
+     <release version="0.99.10" date="2021-06-11" />
+     <release version="0.99.8.1" date="2021-02-13" />
+-- 
+GitLab
+
