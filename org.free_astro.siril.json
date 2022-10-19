@@ -164,8 +164,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/opencv/opencv/archive/4.5.5.zip",
-                    "sha256": "fb16b734db3a28e5119d513bd7c61ef417edf3756165dc6259519bb9d23d04e2"
+                    "url": "https://github.com/opencv/opencv/archive/4.6.0.zip",
+                    "sha256": "158db5813a891c7eda8644259fc1dbd76b21bd1ffb9854a8b4b8115a4ceec359"
                 }
             ]
         },
