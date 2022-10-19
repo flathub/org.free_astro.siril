@@ -146,7 +146,7 @@
                 "-DBUILD_PERF_TESTS=OFF",
                 "-DBUILD_SHARED_LIBS=ON",
                 "-DBUILD_TESTS=OFF",
-                "-DCMAKE_BUILD_TYPE=RELEASE",
+                "-DCMAKE_BUILD_TYPE=Release",
                 "-DENABLE_PRECOMPILED_HEADERS=OFF",
                 "-DFORCE_VTK=OFF",
                 "-DWITH_FFMPEG=OFF",
