@@ -136,7 +136,7 @@
                 "/lib/pkgconfig"
             ],
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=RELEASE",
+                "-DCMAKE_BUILD_TYPE=Release",
                 "-DBUILD_EXAMPLES=OFF",
                 "-DOPENCV_GENERATE_PKGCONFIG=ON",
                 "-DBUILD_DOCS=OFF",
@@ -146,7 +146,6 @@
                 "-DBUILD_PERF_TESTS=OFF",
                 "-DBUILD_SHARED_LIBS=ON",
                 "-DBUILD_TESTS=OFF",
-                "-DCMAKE_BUILD_TYPE=RELEASE",
                 "-DENABLE_PRECOMPILED_HEADERS=OFF",
                 "-DFORCE_VTK=OFF",
                 "-DWITH_FFMPEG=OFF",
@@ -164,8 +163,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/opencv/opencv/archive/4.5.5.zip",
-                    "sha256": "fb16b734db3a28e5119d513bd7c61ef417edf3756165dc6259519bb9d23d04e2"
+                    "url": "https://github.com/opencv/opencv/archive/4.6.0.zip",
+                    "sha256": "158db5813a891c7eda8644259fc1dbd76b21bd1ffb9854a8b4b8115a4ceec359"
                 }
             ]
         },
@@ -291,8 +290,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/free-astro/siril.git",
-                    "tag": "1.0.5",
-                    "commit": "3833f1eb07e35c15417e9af7a1f29e3c65c79caf"
+                    "tag": "1.0.6",
+                    "commit": "b3d4ad5449250f269ac29b712443f3391edf71f5"
                 }
             ]
         }
