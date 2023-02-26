@@ -32,8 +32,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.1.0.tar.gz",
-                    "sha256": "b367c695d2831958e7166921c3b356d5dfa51b1ecee505b97416ba39d1b6c17a"
+                    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.2.0.tar.gz",
+                    "sha256": "ef9881973ecb9fe55732a4c1bb5ca96e63b624728f6319556939e0fe25f495e8"
                 }
             ]
         },
@@ -54,8 +54,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "ftp://ftp.atnf.csiro.au/pub/software/wcslib/wcslib-7.11.tar.bz2",
-                    "sha256": "46befbfdf50cd4953896676a7d570094dc7661e2ae9677b092e7fb13cee3da5f"
+                    "url": "http://www.atnf.csiro.au/people/mcalabre/WCS/wcslib-7.12.tar.bz2",
+                    "sha256": "9cf8de50e109a97fa04511d4111e8d14bd0a44077132acf73e6cf0029fe96bd4"
                 }
             ]
         },
@@ -163,8 +163,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/opencv/opencv/archive/4.6.0.zip",
-                    "sha256": "158db5813a891c7eda8644259fc1dbd76b21bd1ffb9854a8b4b8115a4ceec359"
+                    "url": "https://github.com/opencv/opencv/archive/4.7.0.zip",
+                    "sha256": "db6fb5e7dc76829d738fdbcdba11a810c66ca0a4752e531eaf3d793361e96de8"
                 }
             ]
         },
@@ -183,8 +183,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.exiv2.org/builds/exiv2-0.27.5-Source.tar.gz",
-                    "sha256": "35a58618ab236a901ca4928b0ad8b31007ebdc0386d904409d825024e45ea6e2"
+                    "url": "https://github.com/Exiv2/exiv2/releases/download/v0.27.6/exiv2-0.27.6-Source.tar.gz",
+                    "sha256": "4c192483a1125dc59a3d70b30d30d32edace9e14adf52802d2f853abf72db8a6"
                 }
             ]
         },
@@ -200,8 +200,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url" : "https://www.libraw.org/data/LibRaw-0.20.2.tar.gz",
-                    "sha256" : "dc1b486c2003435733043e4e05273477326e51c3ea554c6864a4eafaff1004a6"
+                    "url" : "https://www.libraw.org/data/LibRaw-0.21.1.tar.gz",
+                    "sha256" : "630a6bcf5e65d1b1b40cdb8608bdb922316759bfb981c65091fec8682d1543cd"
                 },
                 {
                     "type": "shell",
@@ -209,27 +209,6 @@
                         "autoreconf --force --install"
                     ]
                 }
-            ]
-        },
-        {
-            "name": "libconfig",
-            "config-opts": [
-                "--disable-static",
-                "--enable-shared"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://hyperrealm.github.io/libconfig/dist/libconfig-1.7.2.tar.gz",
-                    "sha256": "7c3c7a9c73ff3302084386e96f903eb62ce06953bb1666235fac74363a16fad9"
-                }
-            ],
-            "cleanup": [
-                "/include",
-                "*.la",
-                "*.a",
-                "/lib/cmake",
-                "/lib/pkgconfig"
             ]
         },
         {
@@ -290,8 +269,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/free-astro/siril.git",
-                    "tag": "1.0.6",
-                    "commit": "b3d4ad5449250f269ac29b712443f3391edf71f5"
+                    "tag": "1.2.0-beta1",
+                    "commit": "f3611ada24853cb3870b604621b355d70d06719d"
                 }
             ]
         }
