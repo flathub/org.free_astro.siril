@@ -272,6 +272,10 @@
                     "url": "https://gitlab.com/free-astro/siril.git",
                     "tag": "1.2.0-rc1",
                     "commit": "a593c2b10c9090b5f991718148d61c0fa156fb41"
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-Reformate-appdata.patch"
                 }
             ]
         }
