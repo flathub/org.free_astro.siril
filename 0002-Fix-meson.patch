@@ -1,5 +1,5 @@
 diff --git a/meson.build b/meson.build
-index 7bf5636b..58f0e9c2 100644
+index 7bf5636b5..178bb207d 100644
 --- a/meson.build
 +++ b/meson.build
 @@ -610,7 +610,7 @@ conf_data.set('HAVE_CXX11', true, description : 'Define to 1 if cpp compiler is
@@ -11,11 +11,7 @@ index 7bf5636b..58f0e9c2 100644
      # Cross-compilation without run capability: we won't be able to
      # check networking support.
      glib_networking_works = true
-@@ -621,20 +621,15 @@ if meson.is_cross_build() and not meson.has_exe_wrapper()
-       to open remote HTTPS (or other protocol using SSL/TLS) files.
-       HTTPS is becoming the expected standard and should not be considered
-       optional anymore.
-+
+@@ -624,17 +624,11 @@ if meson.is_cross_build() and not meson.has_exe_wrapper()
      '''
      warning(glib_warning)
      warnings += glib_warning
@@ -25,12 +21,12 @@ index 7bf5636b..58f0e9c2 100644
        '''#include <gio/gio.h>
        int main() {
 -        if (!g_tls_backend_supports_tls (g_tls_backend_get_default ()))
--         return 1;
--       GFile *file = g_file_new_for_uri("https://localhost/test");
--       GError *error = NULL;
--       gchar *content = NULL;
--       g_file_load_contents(file, NULL, &content, NULL, NULL, &error);
--       return error->code == G_IO_ERROR_NOT_SUPPORTED;
+-	  return 1;
+-	GFile *file = g_file_new_for_uri("https://localhost/test");
+-	GError *error = NULL;
+-	gchar *content = NULL;
+-	g_file_load_contents(file, NULL, &content, NULL, NULL, &error);
+-	return error->code == G_IO_ERROR_NOT_SUPPORTED;
 +        return !g_tls_backend_supports_tls (g_tls_backend_get_default ());
        }''',
        dependencies: gio_dep,
