@@ -275,6 +275,11 @@
                 },
                 {
                     "type": "patch",
+                    "use-git": true,
+                    "path": "0002-Fix-meson.patch"
+                },
+                {
+                    "type": "patch",
                     "path": "0001-Reformate-appdata.patch"
                 }
             ]
