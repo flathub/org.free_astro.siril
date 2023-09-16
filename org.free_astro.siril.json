@@ -270,17 +270,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/free-astro/siril.git",
-                    "tag": "1.2.0-rc1",
-                    "commit": "a593c2b10c9090b5f991718148d61c0fa156fb41"
-                },
-                {
-                    "type": "patch",
-                    "use-git": true,
-                    "path": "0002-Fix-meson.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "0001-Reformate-appdata.patch"
+                    "tag": "1.2.0",
+                    "commit": "2405ff957df38823ad64fe4523f05d49366083a6"
                 }
             ]
         }
