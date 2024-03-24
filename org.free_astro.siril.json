@@ -5,6 +5,10 @@
     "sdk": "org.gnome.Sdk",
     "command": "siril",
     "rename-icon": "org.free_astro.siril",
+    "rename-mime-file": "siril.xml",
+    "rename-mime-icons": [
+        "text-x-seq"
+    ],
     "finish-args": [
         "--share=ipc",
         "--share=network",
@@ -265,11 +269,6 @@
         {
             "name": "siril",
             "buildsystem": "meson",
-            "post-install": [
-                "sed -i s/text-x-seq/${FLATPAK_ID}.text-x-seq/ ${FLATPAK_DEST}/share/mime/packages/siril.xml",
-                "mv ${FLATPAK_DEST}/share/mime/packages/siril.xml ${FLATPAK_DEST}/share/mime/packages/${FLATPAK_ID}.xml",
-                "mv ${FLATPAK_DEST}/share/icons/hicolor/scalable/mimetypes/text-x-seq.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/mimetypes/${FLATPAK_ID}.text-x-seq.svg"
-            ],
             "sources": [
                 {
                     "type": "git",
