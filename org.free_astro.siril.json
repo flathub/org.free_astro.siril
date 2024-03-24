@@ -1,7 +1,7 @@
 {
     "app-id": "org.free_astro.siril",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "44",
+    "runtime-version": "46",
     "sdk": "org.gnome.Sdk",
     "command": "siril",
     "rename-icon": "org.free_astro.siril",
@@ -33,8 +33,9 @@
             "sources": [
                 {
                     "type": "archive",
+                    "archive-type": "tar",
                     "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.2.0.tar.gz",
-                    "sha256": "eba53d1b3f6e345632bb09a7b752ec7ced3d63ec5153a848380f3880c5d61889"
+                    "sha256": "ef9881973ecb9fe55732a4c1bb5ca96e63b624728f6319556939e0fe25f495e8"
                 }
             ]
         },
@@ -55,7 +56,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.atnf.csiro.au/people/mcalabre/WCS/wcslib-7.12.tar.bz2",
+                    "url": "ftp://ftp.atnf.csiro.au/pub/software/wcslib/wcslib-7.12.tar.bz2",
                     "sha256": "9cf8de50e109a97fa04511d4111e8d14bd0a44077132acf73e6cf0029fe96bd4"
                 }
             ]
@@ -233,6 +234,9 @@
         },
         {
             "name" : "libheif",
+            "build-options": {
+                "cxxflags": "-Wno-error=maybe-uninitialized"
+            },
             "config-opts": [ "--disable-gdk-pixbuf" ],
             "cleanup": [ "/bin" ],
             "modules": [
