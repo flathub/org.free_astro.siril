@@ -60,8 +60,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "ftp://ftp.atnf.csiro.au/pub/software/wcslib/wcslib-7.12.tar.bz2",
-                    "sha256": "9cf8de50e109a97fa04511d4111e8d14bd0a44077132acf73e6cf0029fe96bd4"
+                    "url": "https://www.atnf.csiro.au/people/mcalabre/WCS/wcslib-8.3.tar.bz2",
+                    "sha256": "431ea3417927bbc02b89bfa3415dc0b4668b0f21a3b46fb8a3525e2fcf614508"
                 }
             ]
         },
@@ -273,8 +273,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/free-astro/siril.git",
-                    "tag": "1.2.1",
-                    "commit": "9e640650d8f50f213c879996121d9887d85fe246"
+                    "tag": "1.2.2",
+                    "commit": "94a08989d6f56745e712a5048d4a40f3db912fa5"
                 }
             ]
         }
