@@ -60,8 +60,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "ftp://ftp.atnf.csiro.au/pub/software/wcslib/wcslib-7.12.tar.bz2",
-                    "sha256": "9cf8de50e109a97fa04511d4111e8d14bd0a44077132acf73e6cf0029fe96bd4"
+                    "url": "https://www.atnf.csiro.au/people/mcalabre/WCS/wcslib-8.3.tar.bz2",
+                    "sha256": "431ea3417927bbc02b89bfa3415dc0b4668b0f21a3b46fb8a3525e2fcf614508"
                 }
             ]
         },
